@@ -17,4 +17,17 @@ def play_game():
     else:
         print("Computer wins!")
 
+    def count_score():
+        user_score = 0
+        computer_score = 0
+        if user_choice == computer_choice:
+            pass
+        elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+             (user_choice == 'paper' and computer_choice == 'rock') or \
+             (user_choice == 'scissors' and computer_choice == 'paper'):
+            user_score += 1
+        else:
+            computer_score += 1
+        return user_score, computer_score
+
 play_game()
